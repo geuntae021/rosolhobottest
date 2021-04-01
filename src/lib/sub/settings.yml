@@ -1,0 +1,30 @@
+server:
+    port: 8090
+    address: localhost
+  
+music:
+    settings:
+        youtube: true
+        melon: false
+        twitch: false
+        streaming: false
+    mainsettings:
+        volume: 3.5
+        youtubeSearch: true
+        otherSearch: false
+        leave: true
+        live: false
+
+botoptions:
+    src/lib/config.json: true
+    debug: false
+    crash: true
+    //crash true 에서 false 로 바꾸지 마세요
+    src/index.js: true
+    // src 폴더에서 index.js 파일을 찾는 항목
+
+botgame:
+    game: ;help
+
+// 마지막 끝 줄이 존제할것인지 확인 또는 거절
+end: true

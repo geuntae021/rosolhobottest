@@ -1,0 +1,11 @@
+{
+    "port": [ 8090 ],
+    "redis": false,
+    "nodemon": false,
+    "npm": true,
+    "application_name": "로블이",
+    "node": true,
+    "bot_start": true,
+    "src/lib/config.json": true,
+    "bot_name": "로블이"
+}
