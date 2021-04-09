@@ -25,7 +25,7 @@ module.exports = {
         }
 
         message.channel.bulkDelete(deleteAmount + 1, true)
-            .then(deleted => message.channel.send(` \`${deleted.size - 1}\` 개의 메시지를 삭제하였습니다.`))
+            .then(deleted => message.channel.send(` \`${deleted.size - 1}\` 개의 메시지를 삭제하였습니다.\n메시지가 100개 이상일경우 청소가 불가능합니다.\n폭발 명령어를 사용해주세요`))
             .catch(err => message.reply(`Something went wrong... ${err}`));
     }
 }

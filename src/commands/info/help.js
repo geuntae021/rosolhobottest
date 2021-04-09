@@ -17,6 +17,7 @@ module.exports = {
         .addField('`;밴`', '유저를 밴')
         .addField('`;뮤트`', '유저를 뮤트')
         .addField('`;언뮤트`', '멤버를 언뮤트')
+        .addField(';폭발', '채널을 삭제합니다.')
         .addField('`;공지`', '관리자 명령어')
         .addField('`;봇공지`', '관리자 명령어')
         .addField('`;패치`', '관리자 명령어')
@@ -75,6 +76,10 @@ module.exports = {
         .addField('`;resume`', '일시정지된 음악을 다시 시작합니다.')
         .addField('`;stop`', '음악을 그냥 아예 정지합니다')
         .setTimestamp()
+
+        const koreadiscordbotlist = new Discord.MessageEmbed()
+        .setTitle('한디리 전용 명령어')
+        .addField(';hellothisisverification', '한디리 봇 승인을 위해 만든 명령어')
 
         const pages = [
                 moderation,

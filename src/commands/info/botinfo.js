@@ -18,6 +18,7 @@ module.exports = {
         .addField("봇 주인", "로쏠호#7854", inline )
         .addField("서버 개수", `🛡 ${servsize}`, inline)
         .addField("채널 수", `📁 ${chansize}`, inline)
+        .addField('RAM usage', `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, inline )
         .addField("유저 수", `${usersize}`, inline)
         .addField("봇 언어", "Discord.js", inline)
         .addField("봇 이름", `${global.bot_name}`, inline )
